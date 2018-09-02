@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    //card view
+    <string name="favorite">Favorite</string>
+    <string name="share">share</string>
+    <string name="movie_title">Title Movie</string>
+    <string name="postermovie"> Postermovie</string>
+    <string name="rls_date"> Release Date</string>
+    <string name="overview"> Overview</string>
+
+    //detail
+    <string name="movietitle">Movie Title</string>
+    <string name="rating">Rating :</string>
+    <string name="release_date">Release Date :</string>
+    <string name="overv">Overview :</string>
+
+    //drawer
+    <string name="home">Home</string>
+    <string name="nowplay">Now Playing</string>
+    <string name="upcom">Up Coming</string>
+    <string name="search">Search Movie</string>
+
+    //tabs
+    <string name="nowplaying">Now Playing</string>
+    <string name="upcoming">Up Coming</string>
+    <string name="searchtab">Search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

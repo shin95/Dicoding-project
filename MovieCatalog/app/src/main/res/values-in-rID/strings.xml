@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieCatalog</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    //card view
+    <string name="favorite">Favorit</string>
+    <string name="share">Bagikan</string>
+    <string name="movie_title">Judul Film</string>
+    <string name="postermovie">Postermovie</string>
+    <string name="rls_date">Tanggal Rilis</string>
+    <string name="overview">Ikhtisar</string>
+
+    //detail
+    <string name="movietitle">Judul Film</string>
+    <string name="rating">Peringkat :</string>
+    <string name="release_date">Tanggal Rilis :</string>
+    <string name="overv">Ikhtisar :</string>
+
+    //drawer
+    <string name="home">Rumah</string>
+    <string name="nowplay">Sedang Dimainkan</string>
+    <string name="upcom">Akan Datang</string>
+    <string name="search">Cari Film</string>
+
+    //tabs
+    <string name="nowplaying">Sedang Berlangsung</string>
+    <string name="upcoming">Akan Datang</string>
+    <string name="searchtab">Cari</string>
+</resources>
