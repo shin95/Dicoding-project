@@ -32,4 +32,15 @@
     <string name="nowplaying">Sedang Berlangsung</string>
     <string name="upcoming">Akan Datang</string>
     <string name="searchtab">Cari</string>
+
+    //setting
+
+    <string name="language_title">Pilihan Bahasa</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="notifications_title">Notifikasi</string>
+    <string name="daily_reminder">Aktifkan/matikan pegingat harian. Anda akan menerima pengingat harian pada pukul 8 pagi</string>
+    <string name="release_reminder">Aktifkan/matikan pengingat film baru. Anda akan menerima pengingat harian film yang baru tayang pada pukul 7 pagi</string>
+    <string name="off_movie_release_reminder">Mematikan Pengigat film yang sudah rilis</string>
+    <string name="on_movie_release_reminder">Aktifkan Pengigat film yang sudah rilis </string>
+    <string name="message_daily">Lets check Catalogue Movie to get new movies info</string>
 </resources>

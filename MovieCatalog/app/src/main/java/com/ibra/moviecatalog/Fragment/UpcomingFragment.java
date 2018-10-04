@@ -12,9 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ibra.moviecatalog.MovieItem;
+import com.ibra.moviecatalog.model.MovieItem;
 import com.ibra.moviecatalog.R;
-import com.ibra.moviecatalog.RecyAdapter;
+import com.ibra.moviecatalog.Adapter.RecyAdapter;
 import com.ibra.moviecatalog.taskLoader.UpComingAsyncTaskLoader;
 
 import java.util.ArrayList;

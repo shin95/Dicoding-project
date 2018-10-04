@@ -1,9 +1,8 @@
 package com.ibra.moviecatalog.taskLoader;
 
-import android.content.AsyncTaskLoader;
 import android.content.Context;
 
-import com.ibra.moviecatalog.MovieItem;
+import com.ibra.moviecatalog.model.MovieItem;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.SyncHttpClient;
 

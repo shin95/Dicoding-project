@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.ibra.moviecatalog.Fragment.FavoriteFragment;
 import com.ibra.moviecatalog.Fragment.HomeFragment;
 import com.ibra.moviecatalog.Fragment.NowPlayingFragment;
 import com.ibra.moviecatalog.Fragment.SearchFragment;
@@ -35,20 +36,20 @@ public class MainActivity extends AppCompatActivity
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        if (savedInstanceState == null){
-            Fragment currentFragment =  new HomeFragment();
+        if (savedInstanceState == null) {
+            Fragment currentFragment = new HomeFragment();
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.content_main,currentFragment)
+                    .replace(R.id.content_main, currentFragment)
                     .commit();
         }
-    }
 
+    }
 
     @Override
     protected void onResume() {
@@ -92,12 +93,11 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            if (item.getItemId() == R.id.action_settings){
-                Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
-                startActivity(intent);
-            }
+            Intent intent = new Intent(getApplicationContext(), SettingActivity.class);
+            startActivity(intent);
             return true;
-        }
+
+            }
 
         return super.onOptionsItemSelected(item);
     }
@@ -109,9 +109,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         Bundle bundle = new Bundle();
-
         Fragment fragment = null;
-        String title ="";
+          String title ="";
+
         if (id == R.id.home) {
             title = "Home";
             fragment = new HomeFragment();
@@ -123,12 +123,14 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.upcom) {
             title = "Up Coming";
             fragment = new UpcomingFragment();
-
         }else if (id == R.id.search){
             title = "Search Movie";
             fragment = new SearchFragment();
             fragment.setArguments(bundle);
-
+        }else if (id == R.id.favorite){
+            title = "Favorite";
+            fragment = new FavoriteFragment();
+            fragment.setArguments(bundle);
         }
 
 
@@ -140,7 +142,7 @@ public class MainActivity extends AppCompatActivity
         }
 
 
-        getSupportActionBar().setTitle(title);
+      getSupportActionBar().setTitle(title);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

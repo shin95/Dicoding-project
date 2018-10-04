@@ -4,23 +4,25 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.ibra.moviecatalog"
-        minSdkVersion 18
+        minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "API_KEY", "\"d9f7bcde31d4d4036fd805ca62ce29d0\""
     }
     buildTypes {
-        debug {
-            buildConfigField "String", "API_KEY", "\"d9f7bcde31d4d4036fd805ca62ce29d0\""
-        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "API_KEY", "\"d9f7bcde31d4d4036fd805ca62ce29d0\""
 
         }
 
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
     }
 }
 
@@ -39,5 +41,14 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.github.bumptech.glide:glide:3.6.1'
+    implementation 'com.google.android.gms:play-services-gcm:10.2.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
 
 }

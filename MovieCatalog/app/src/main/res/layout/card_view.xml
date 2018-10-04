@@ -30,10 +30,27 @@
             app:layout_constraintBottom_toTopOf="@+id/iv_poster_detail_rv"
             app:layout_constraintVertical_chainStyle="packed" />
 
+
+        <TextView
+            android:id="@+id/release_date_detail_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/release_date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toEndOf="@+id/avatar_image"
+            app:layout_constraintBottom_toBottomOf="@+id/avatar_image"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
         <TextView
             android:id="@+id/title_detail_rv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:lines="1"
             android:layout_marginTop="4dp"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="16dp"
@@ -44,19 +61,7 @@
             app:layout_constraintStart_toEndOf="@+id/avatar_image"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/release_date_detail_rv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="4dp"
-            android:text="@string/release_date"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="@color/colorPrimary"
-            app:layout_constraintStart_toEndOf="@+id/avatar_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@+id/avatar_image" />
+
 
         <ImageView
             android:id="@+id/iv_poster_detail_rv"
@@ -85,7 +90,7 @@
             app:layout_constraintTop_toBottomOf="@+id/iv_poster_detail_rv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btn_favorite"/>
+            app:layout_constraintBottom_toTopOf="@+id/btn_Detail"/>
 
         <Button
             android:id="@+id/btn_share"
@@ -94,16 +99,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/share"
-            app:layout_constraintTop_toTopOf="@+id/btn_favorite"
-            app:layout_constraintStart_toEndOf="@+id/btn_favorite"/>
+            app:layout_constraintTop_toTopOf="@+id/btn_Detail"
+            app:layout_constraintStart_toEndOf="@+id/btn_Detail"/>
 
         <Button
-            android:id="@+id/btn_favorite"
+            android:id="@+id/btn_Detail"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/favorite"
+            android:text="@string/detail"
             app:layout_constraintTop_toBottomOf="@+id/overview_rv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>

@@ -18,10 +18,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import com.ibra.moviecatalog.DetailMovie;
-import com.ibra.moviecatalog.MainActivity;
-import com.ibra.moviecatalog.MovieAdapter;
-import com.ibra.moviecatalog.MovieItem;
+import com.ibra.moviecatalog.Adapter.DetailMovie;
+import com.ibra.moviecatalog.Adapter.MovieAdapter;
+import com.ibra.moviecatalog.model.MovieItem;
 import com.ibra.moviecatalog.R;
 import com.ibra.moviecatalog.taskLoader.MyAsyncTaskLoader;
 
@@ -50,7 +49,6 @@ public class SearchFragment extends Fragment implements LoaderManager.LoaderCall
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-     //   return inflater.inflate(R.layout.fragment_search, container, false);
 
        View view = inflater.inflate(R.layout.fragment_search,container,false);
 
@@ -69,8 +67,6 @@ public class SearchFragment extends Fragment implements LoaderManager.LoaderCall
 
                intent.putExtra(DetailMovie.EXTRA_POSTER_DETAIL, item.getPoster());
                intent.putExtra(DetailMovie.EXTRA_TITLE, item.getTitle());
-               intent.putExtra(DetailMovie.EXTRA_RATE_COUNT, item.getRate_count());
-               intent.putExtra(DetailMovie.EXTRA_RATE, item.getRate());
                intent.putExtra(DetailMovie.EXTRA_RELEASE_DATE, item.getReleasedate());
                intent.putExtra(DetailMovie.EXTRA_OVERVIEW, item.getOverview());
 

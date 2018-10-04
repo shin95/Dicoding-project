@@ -1,4 +1,8 @@
-<resources >
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
+
     <string name="app_name">MovieCatalog</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -6,8 +10,9 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    
+
     //card view
+    <string name="detail">Detail</string>
     <string name="favorite">Favorite</string>
     <string name="share">share</string>
     <string name="movie_title">Title Movie</string>
@@ -26,10 +31,29 @@
     <string name="nowplay">Now Playing</string>
     <string name="upcom">Up Coming</string>
     <string name="search">Search Movie</string>
+    >
+
+    //tabs
+    <string name="nowplaying">Now Playing</string>
+    <string name="upcoming">Up Coming</string>
+    <string name="searchtab">Search</string>
+    <string name="image_movie">Image Movie</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    
-    
-    
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_data">No Data</string>
+
+    //setting
+
+    <string name="language_title">Localization</string>
+    <string name="bahasa">Language</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="daily_reminder">Turn on/off daily reminder. You will receive daily reminder at 8AM</string>
+    <string name="release_reminder">Turn on/off new movie release reminder. You will receive daily movie release info at 7AM</string>
+    <string name="off_movie_release_reminder">Turn off movie release daily reminder </string>
+    <string name="on_movie_release_reminder">Turn on movie release daily reminder </string>
+    <string name="message_daily">Lets check Catalogue Movie to get new movies info</string>
+
 </resources>
